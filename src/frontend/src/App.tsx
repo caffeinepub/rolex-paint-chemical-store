@@ -1193,10 +1193,6 @@ function ContactSection() {
 
 function Footer() {
   const year = new Date().getFullYear();
-  const hostname =
-    typeof window !== "undefined" ? window.location.hostname : "";
-  const caffeineUrl = `https://caffeine.ai?utm_source=caffeine-footer&utm_medium=referral&utm_content=${encodeURIComponent(hostname)}`;
-
   return (
     <footer
       className="bg-navy border-t border-white/10 py-10"
@@ -1240,15 +1236,8 @@ function Footer() {
               © {year} Rolex Paint &amp; Chemical Store. All rights reserved.
             </p>
             <p className="text-white/30 font-body text-xs mt-1">
-              Built with ❤️ using{" "}
-              <a
-                href={caffeineUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:text-gold transition-colors"
-              >
-                caffeine.ai
-              </a>
+              Developed &amp; Owned by Abeera Ramzan | Rolex Paint &amp;
+              Chemical Store
             </p>
           </div>
         </div>
